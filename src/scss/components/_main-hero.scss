@@ -3,10 +3,11 @@
     display: flex;
     flex-direction:column;
     background: url(/images/banner-bg.jpg);
-    background-size: cover;
+    background-size: 1800px auto;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height:700px;
+    background-position: center -100px;
+    min-height:990px;
+    background-attachment: fixed;
 }
 .main-hero:before {
     background: url(/images/arrow.svg) no-repeat;

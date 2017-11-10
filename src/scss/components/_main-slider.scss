@@ -45,6 +45,11 @@
     border:0;
     color:#fff;
     font-size:20px;
+    transition:0.5s all;
+
+    &:hover {
+        background: rgba(#000, 0.8);
+    }
 }
 .main-slider-prev span,
 .main-slider-next span {
@@ -52,4 +57,47 @@
 }
 .main-slider-next {
     order:3
+}
+
+
+
+/* animacje slajdow */
+.main-slide {
+    opacity: 0;
+    transition:0.5s all;
+}
+.main-slide-title {
+    position: relative;
+    left:-50px;
+    opacity: 0;
+    transition:0.5s 0.5s all;
+}
+.main-slide-text {
+    position: relative;
+    left:50px;
+    opacity: 0;
+    transition:0.5s 0.5s all;
+}
+.main-slide-buttons-bar {
+    position: relative;
+    top:100px;
+    opacity: 0;
+    transition:0.5s 0.5s all;
+}
+
+.main-slide.active {
+    opacity: 1;
+}
+.main-slide.active .main-slide-title {
+    left:0;
+    opacity: 1;
+}
+.main-slide.active .main-slide-text {
+    left:0;
+    opacity: 1;
+}
+.main-slide.active .main-slide-buttons-bar {
+    position: relative;
+    top:0;
+    opacity: 1;
 }
