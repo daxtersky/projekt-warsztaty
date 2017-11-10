@@ -6,6 +6,7 @@
     align-items:center;
 }
 .main-slider-slides-cnt {
+    margin: 0 60px;
     max-width:900px;
     position: relative;
     width:100%;
@@ -35,17 +36,45 @@
 }
 .main-slide-buttons-bar {
     text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.main-slide-button {
+    display: inline-block;
+    font-size:15px;
+    font-weight: bold;
+    padding:20px 40px;
+    background: $colorSecondary;
+    border-radius: 4px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:0.4s all;
+    margin:10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 100%;
+}
+.main-slide-button-secondary {
+    background: #fff;
+    color:$colorSecondary;
+}
+.main-slide-button:hover {
+    transform: scale(1.1, 1.1);
 }
 .main-slider-prev,
 .main-slider-next {
     cursor: pointer;
     width:55px;
     height:165px;
-    background: rgba(#000, 0.4);
+    background: rgba(#000, 0.1);
     border:0;
     color:#fff;
-    font-size:20px;
+    font-size:40px;
     transition:0.5s all;
+    position: relative;
+    transition: 0.6s all;
 
     &:hover {
         background: rgba(#000, 0.8);
@@ -70,23 +99,24 @@
     position: relative;
     left:-50px;
     opacity: 0;
-    transition:0.5s 0.5s all;
+    transition:0.5s 0.5s left, 0.5s 0.5s opacity;
 }
 .main-slide-text {
     position: relative;
     left:50px;
     opacity: 0;
-    transition:0.5s 0.5s all;
+    transition:0.5s 0.5s left, 0.5s 0.5s opacity;
 }
 .main-slide-buttons-bar {
     position: relative;
     top:100px;
     opacity: 0;
-    transition:0.5s 0.5s all;
+    transition:0.5s 0.5s top, 0.5s 0.5s opacity;
 }
 
 .main-slide.active {
     opacity: 1;
+    position: relative;
 }
 .main-slide.active .main-slide-title {
     left:0;
@@ -100,4 +130,26 @@
     position: relative;
     top:0;
     opacity: 1;
+}
+
+@media only screen and (max-width:1150px) {
+    .main-slide-title {
+        font-size:80px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main-slide-title {
+        font-size:70px;
+    }
+}
+
+@media only screen and (max-width:$mediaWidth) {
+    .main-slide-title {
+        font-size:60px;
+        line-height: 1.1em;
+    }
+    .main-slide-buttons-bar .button {
+        width:100%;
+    }
 }

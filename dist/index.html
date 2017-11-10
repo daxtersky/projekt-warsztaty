@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Nunito+Sans:400,600,700i,800,900&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Arimo:400,700|Nunito+Sans:400,600,700i,800,900&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
@@ -19,15 +19,25 @@
                     <div class="container">
 
                         <h1 class="main-logo">
-                            <a href=""><img src="/images/logo.png" alt="Web.school"></a>
+                            <a href="">
+                                <span>WEB</span>.SCHOOL
+                            </a>
                         </h1>
+
+
+                        <button class="main-nav-toogle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <strong>Pokaż menu</strong>
+                        </button>
 
                         <nav class="main-nav">
                             <ul>
-                                <li><a href="">Home Page</a></li>
-                                <li><a href="">Courses</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li><a href="#mainSlider">Home Page</a></li>
+                                <li><a href="#courses">Courses</a></li>
+                                <li><a href="#learn">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
 
@@ -51,8 +61,8 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                             </div>
                             <div class="main-slide-buttons-bar">
-                                <a href="" class="button">See more</a>
-                                <a href="" class="button button-primary">Key features</a>
+                                <a href="" class="main-slide-button">See more</a>
+                                <a href="" class="main-slide-button main-slide-button-secondary">Key features</a>
                             </div>
                         </div>
                         <div class="main-slide">
@@ -61,16 +71,19 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                             </div>
                             <div class="main-slide-buttons-bar">
-                                <a href="" class="button">See more</a>
-                                <a href="" class="button button-primary">Key features</a>
+                                <a href="" class="main-slide-button">See more</a>
+                                <a href="" class="main-slide-button main-slide-button-secondary">Key features</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="main-hero-arrow">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path class="arrow-path" d="M34.67,25.81a1.55,1.55,0,0,0-2.18,0l-6,6V14.53a1.54,1.54,0,0,0-3.09,0V31.74l-5.93-5.93A1.54,1.54,0,0,0,15.33,28l8.57,8.57a1.57,1.57,0,0,0,2.2,0L34.67,28A1.55,1.55,0,0,0,34.67,25.81Z"/><path class="arrow-circle" d="M25,4A21,21,0,1,1,4,25,21,21,0,0,1,25,4m0-4A25,25,0,1,0,50,25,25,25,0,0,0,25,0Z"/></svg>
+                </div>
             </div>
 
-            <section class="section-feature-courses">
+            <section class="section-feature-courses" id="courses">
                 <div class="container">
                     <h2 class="section-title">
                         Feature <span>Courses</span>
@@ -82,6 +95,7 @@
                             <div class="box">
                                 <a href="" class="box-graphic">
                                     <img src="/images/photo-1.jpg" alt="">
+                                    <span class="box-graphic-overlay"></span>
                                 </a>
                                 <h2 class="box-title">Lorem ipsum sit dolor</h2>
                                 <div class="box-content">
@@ -95,7 +109,8 @@
 
                             <div class="box">
                                 <a href="" class="box-graphic">
-                                    <img src="/images/photo-1.jpg" alt="">
+                                    <img src="/images/photo-2.jpg" alt="">
+                                    <span class="box-graphic-overlay"></span>
                                 </a>
                                 <h2 class="box-title">Lorem ipsum sit dolor</h2>
                                 <div class="box-content">
@@ -109,7 +124,8 @@
 
                             <div class="box">
                                 <a href="" class="box-graphic">
-                                    <img src="/images/photo-1.jpg" alt="">
+                                    <img src="/images/photo-3.jpg" alt="">
+                                    <span class="box-graphic-overlay"></span>
                                 </a>
                                 <h2 class="box-title">Lorem ipsum sit dolor</h2>
                                 <div class="box-content">
@@ -123,7 +139,7 @@
                 </div>
             </section>
 
-            <section class="section-learn">
+            <section class="section-learn" id="learn">
                 <div class="container">
 
                     <h2 class="section-title">
@@ -195,7 +211,7 @@
                 </div>
             </section>
 
-            <section class="section-contact">
+            <section class="section-contact" id="contact">
                 <div class="container">
                     <h2 class="section-title">
                         Contact <span>with Us</span>
@@ -235,6 +251,24 @@
             <section class="main-map" id="googleMap">
 
             </section>
+
+            <footer class="main-footer">
+                <div class="container">
+                    <ul class="main-footer-menu">
+                        <li><a href="">Home page</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Regulation</a></li>
+                    </ul>
+                    <ul class="main-footer-menu">
+                        <li><a href="">Prices</a></li>
+                        <li><a href="">Our fleet</a></li>
+                        <li><a href="">Our clients</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <small class="main-footer-copyright">Copyright &copy; WAR_FER_S_27</small>
+                </div>
+            </footer>
 
             <script>
                 function initMap() {

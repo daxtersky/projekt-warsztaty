@@ -7,3 +7,13 @@
     flex-grow:1;
     padding:0 10px;
 }
+
+@media only screen and (max-width:$mediaWidth) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row .col {
+        margin-bottom:50px;
+    }
+}

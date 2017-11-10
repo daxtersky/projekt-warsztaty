@@ -21,7 +21,7 @@ const handleError = function(err) {
 gulp.task('browseSync', function() {
     browserSync.init({
         server: "./dist",
-        notify: true,
+        notify: false,
         host: '192.168.0.24', //IPv4 Address Wirless LAN adapter WiFi from ipconfig
         //port: 3000,
         open: true //czy otwierac strone
@@ -56,8 +56,8 @@ gulp.task('es6', function(cb) {
         if (err) throw err;
         console.log(stats.toString());
         cb();
-        //browserSync.reload();
-        browserSync.stream({match: '**/*.js'})
+        browserSync.reload();
+        //browserSync.stream({match: '**/*.js'})
     })
 })
 

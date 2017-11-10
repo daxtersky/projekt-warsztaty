@@ -1,18 +1,24 @@
 import { form } from './form.js';
 import { Slider } from './slider.js';
+import { navToggle } from './nav.js';
+import { initScroll } from './scroll.js';
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    //formularz kontaktowy
     form();
 
+    //slider
     const slider = new Slider({
         selector : '#mainSlider'
     })
     slider.bindButtons();
 
-    $(window).on('scroll', function() {
-        console.log($(this).scrollTop() * 0.1)
-        $('.main-hero').css('background-position-y', -100 - ($(this).scrollTop() * 2));
-    })
+    //init scroll events
+    initScroll();
+
+    //navigacja - toggle
+    navToggle();
+
 
 });

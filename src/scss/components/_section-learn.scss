@@ -1,5 +1,5 @@
 .section-learn {
-    background: #EBCE5E;
+    background: rgba($colorSecondary, 0.06);
     padding:125px 0;
 }
 .section-learn .col {
@@ -11,4 +11,41 @@
 }
 .section-learn .box-graphic img {
     border-radius: 50%;
+}
+.section-learn .box-graphic-overlay {
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba($colorSecondary, 0.8);
+    opacity:0;
+    transition:0.5s all;
+}
+
+@media only screen and (max-width:800px) {
+    .section-learn .row {
+        flex-wrap: wrap;
+    }
+    .section-learn .col {
+        width:50%;
+        margin-bottom:50px;
+    }
+}
+
+@media only screen and (max-width:$mediaWidth) {
+    .section-learn {
+        max-width:100%;
+        margin:0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .section-learn .col {
+        width:90%;
+    }
+    .section-learn .box-graphic {
+        display: inline-block;
+        margin:0 auto;
+    }
 }

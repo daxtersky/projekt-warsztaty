@@ -1,5 +1,6 @@
 $colorMain : #F9DA61;
 $colorSecondary : #131313;
+$mediaWidth: 768px;
 
 @import "partials/normalize";
 
@@ -18,6 +19,7 @@ $colorSecondary : #131313;
 @import "components/_section-feature-courses.scss";
 @import "components/_section-learn.scss";
 @import "components/_section-map.scss";
+@import "components/_footer.scss";
 
 @import "partials/print";
 

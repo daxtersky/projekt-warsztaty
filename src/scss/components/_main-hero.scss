@@ -9,17 +9,20 @@
     min-height:990px;
     background-attachment: fixed;
 }
-.main-hero:before {
-    background: url(/images/arrow.svg) no-repeat;
-    width:40px;
-    height:40px;
+.main-hero-arrow {
+    width:50px;
+    height:50px;
     content:'';
     position: absolute;
     left:50%;
-    bottom:20px;
+    bottom:30px;
+    transform: translateX(-50%);
+
+}
+.main-hero-arrow .arrow-path {
     animation: animArrow 0.5s 0s infinite linear alternate;
 }
 @keyframes animArrow {
-    0% {margin-bottom:0;}
-    100% {margin-bottom:6px;}
+    0% {transform:translate(0, 10%);}
+    100% {transform:translate(0, -10%);}
 }

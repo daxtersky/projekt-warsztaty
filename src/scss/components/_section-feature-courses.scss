@@ -1,3 +1,13 @@
 .section-feature-courses {
     margin-bottom:125px;
 }
+
+@media only screen and (max-width:$mediaWidth) {
+    .section-feature-courses {
+        max-width:90%;
+        margin:0 auto;
+    }
+    .section-feature-courses img {
+        width:100%;
+    }
+}
