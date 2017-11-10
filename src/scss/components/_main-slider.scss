@@ -1,0 +1,55 @@
+.main-slider {
+    flex-grow:1;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.main-slider-slides-cnt {
+    max-width:900px;
+    position: relative;
+    width:100%;
+    min-height:400px;
+    order:2;
+}
+.main-slide {
+    position: absolute;
+    left:0;
+    top:0;
+}
+.main-slide-title {
+    font-family:'Nunito Sans', sans-serif;
+    font-size:100px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $colorSecondary;
+    margin:0;
+    margin-bottom:65px;
+    text-align: center;
+}
+.main-slide-text {
+    font-size: 19px;
+    text-align: center;
+    color:rgba($colorSecondary, 0.65);
+    margin-bottom:65px;
+}
+.main-slide-buttons-bar {
+    text-align: center;
+}
+.main-slider-prev,
+.main-slider-next {
+    cursor: pointer;
+    width:55px;
+    height:165px;
+    background: rgba(#000, 0.4);
+    border:0;
+    color:#fff;
+    font-size:20px;
+}
+.main-slider-prev span,
+.main-slider-next span {
+    display: none;
+}
+.main-slider-next {
+    order:3
+}

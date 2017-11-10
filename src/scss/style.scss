@@ -1,15 +1,40 @@
-//variable
-@import "variables";
+$colorMain : #F9DA61;
+$colorSecondary : #131313;
 
-//mixins
-@import "mixins";
-
-//reset, normalize, helper-class
 @import "partials/normalize";
 
-//global layouts
 @import "partials/global-class";
 
-//media
+@import "components/_box.scss";
+@import "components/_button.scss";
+@import "components/_class.scss";
+@import "components/_grid.scss";
+@import "components/_layout.scss";
+@import "components/_main-header.scss";
+@import "components/_main-hero.scss";
+@import "components/_main-slider.scss";
+@import "components/_nav.scss";
+@import "components/_section-contact.scss";
+@import "components/_section-feature-courses.scss";
+@import "components/_section-learn.scss";
+@import "components/_section-map.scss";
+
 @import "partials/print";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

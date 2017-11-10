@@ -1,0 +1,97 @@
+.section-contact {
+    padding:125px 0;
+}
+.section-contact-text {
+    margin-bottom:60px;
+}
+.section-contact-form {}
+.section-contact-form label {
+    position: absolute;
+    left:-999999px;
+}
+.section-contact-form .form-row {
+    margin-bottom:15px;
+}
+.section-contact-form input[type=text],
+.section-contact-form input[type=email],
+.section-contact-form textarea {
+    border:2px solid $colorSecondary;
+    padding:15px;
+    width:100%;
+    max-width:540px;
+    background: transparent;
+
+    &:focus {
+        outline:none;
+        box-shadow: inset 0 0 0 1px $colorSecondary;
+    }
+
+    &.error {
+        border-color:red;
+
+        &:focus {
+            box-shadow: inset 0 0 0 1px red;
+        }
+    }
+}
+.section-contact-form textarea {
+    max-width: 100%;
+    min-height:150px;
+    resize:none;
+}
+.section-contact-form button[type=submit] {
+    background: $colorSecondary;
+    padding:15px 30px;
+    color:#fff;
+    text-transform: uppercase;
+    border:0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section-contact-form button[type=submit].loading {
+    position: relative;
+    padding-left:60px;
+}
+.section-contact-form button[type=submit].loading:before {
+    content:'';
+    position: absolute;
+    left:10px;
+    top:50%;
+    border-radius: 50%;
+    transform:translate(0, -50%);
+    width:25px;
+    height:25px;
+    border:3px solid rgba($colorMain, 0.4);
+    border-right-color: $colorMain;
+    animation:animLoading 0.5s 0s infinite linear;
+}
+@keyframes animLoading {
+    0% {transform:translate(0, -50%) rotate(0deg);}
+    100% {transform:translate(0, -50%) rotate(360deg);}
+}
+.section-contact-form .form-message {
+    display: inline-block;
+    font-size:25px;
+    margin-left:20px;
+    font-weight: 600;
+    padding-left:40px;
+    position: relative;
+}
+
+.section-contact-form .form-message:before {
+    content: '\f118';
+    font-family: 'FontAwesome';
+    position: absolute;
+    left:0;
+    top:50%;
+    font-size:30px;
+    transform:translateY(-50%);
+}
+
+
+.section-contact-form .form-last-row {
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+}

@@ -1,0 +1,16 @@
+.main-header {
+    background: rgba(0,0,0,0.1);
+}
+
+.main-header .main-logo {
+    margin:0;
+    height:100%;
+    display: flex;
+    align-items:center;
+}
+
+.main-header .container {
+    height:90px;
+    display: flex;
+    justify-content: space-between;
+}

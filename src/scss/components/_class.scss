@@ -1,0 +1,25 @@
+.container {
+    max-width:1140px;
+    margin:0 auto;
+}
+.section-title {
+    font-size:60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin:0;
+    padding-bottom:20px;
+    margin-bottom:40px;
+}
+.section-title span {
+    color:#fff;
+}
+.section-title:after {
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:150px;
+    height:3px;
+    background: $colorSecondary;
+}

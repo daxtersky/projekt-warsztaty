@@ -1,0 +1,30 @@
+.button {
+    display: inline-block;
+    font-size:15px;
+    font-weight: bold;
+    padding:25px 40px;
+    box-shadow: inset 0 0 0 40px $colorSecondary;
+    border-radius: 4px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:0.4s all;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 100%;
+
+}
+.button:hover {
+    box-shadow: inset 0 0 0 4px $colorSecondary;
+    color: $colorSecondary;
+}
+.button-primary {
+    box-shadow: inset 0 0 0 40px #fff;
+    color: $colorSecondary;
+}
+.button-primary:hover {
+    box-shadow: inset 0 0 0 4px #fff;
+    color: $colorSecondary;
+}

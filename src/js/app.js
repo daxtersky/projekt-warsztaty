@@ -1,9 +1,7 @@
-import { obj } from './test';
+import { form } from './form.js';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    //tutaj skrypty
-    obj.print("To jest wiadomosc 23");
-    obj.print();   
+    form();
 
 });

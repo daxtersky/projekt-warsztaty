@@ -1,0 +1,48 @@
+.box {}
+.box-graphic {
+    position: relative;
+    display: block;
+}
+.box-graphic img {
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
+.box-graphic-overlay {
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba($colorSecondary, 0.8);
+    opacity:0;
+    transition:0.5s all;
+}
+.box-graphic:hover .box-graphic-overlay {
+    opacity:1;
+}
+.box-graphic-overlay:before,
+.box-graphic-overlay:after {
+    content:'';
+    width:50px;
+    height:10px;
+    background: #fff;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+.box-graphic-overlay:after {
+    transform:translate(-50%, -50%) rotate(90deg);
+}
+.box-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.box-content {}
+.box-button {
+    margin-top:30px;
+    padding:20px 40px;
+}
